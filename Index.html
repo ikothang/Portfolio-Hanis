@@ -1209,7 +1209,7 @@ const PORTFOLIO = {
       if (f.caption) { const cap = document.createElement('figcaption'); cap.textContent = f.caption; fig.append(cap); }
     } else fig.setAttribute('data-placeholder', '');
   });
-
+ 
   /* ---------- highlight the current section in the top navigation ---------- */
   const links = [...document.querySelectorAll('.navlinks a')];
   const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
